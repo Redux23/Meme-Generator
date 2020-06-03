@@ -12,7 +12,7 @@ class MemeGenerator extends Component{
 
         }
 
-       
+       this.handleChange = this.handleChange.bind(this)
     }
 
     componentDidMount(){
@@ -20,14 +20,38 @@ class MemeGenerator extends Component{
         .then(response => response.json())
         .then(response => {
             const {memes} = response.data
-            console.log(memes)
+            this.setState({allMemesImg: memes})
         })
     }
 
 
+    handleChange(e){
+        
+    }
+
     render(){
         return(
-            <h1>Meme Generator section</h1>
+            <div>
+            <form className="meme-form">
+            <input
+            type="text"
+            name="topText"
+            placeholder="Top text"
+            value={this.state.topText}
+            onChange={this.handleChange}
+            />
+
+            <input 
+            type="text"
+            name="bottomText"
+            placeholder="Bottom text"
+            value={this.state.bottomText}
+            onChange={this.handleChange}
+            />
+            </form>
+
+            <button>Gen</button>
+            </div>
         )
     }
 }
