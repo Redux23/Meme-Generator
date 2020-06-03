@@ -73,3 +73,47 @@ bottom: 0;
 .meme > .top {
   top: 0;
 }
+
+.meme-form {
+  width: 45%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meme-form > button {
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.1px;
+  color: white;
+  background: #6441a5;
+
+
+}
+
+.meme-form > input::-webkit-input-placeholder{
+  font-family: VT323, monospace;
+  font-size: 15px;
+  text-align: start;
+}
+
+.meme-form > input::-moz-placeholder{
+  font-family: VT323, monospace;
+  font-size: 15px;
+  text-align: center;
+  
+}
+.meme-form > input::-ms-input-placeholder{
+  font-family: VT323, monospace;
+  font-size: 15px;
+  text-align: center;
+  
+}
+
+.meme-form > input::-moz-placeholder{
+  font-family: VT323, monospace;
+  font-size: 15px;
+  text-align: center;
+  
+}
