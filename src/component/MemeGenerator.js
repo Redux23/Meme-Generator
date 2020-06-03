@@ -5,12 +5,12 @@ class MemeGenerator extends Component{
     constructor(){
         super()
         this.state = {
-            
+
         }
     }
     render(){
         return(
-            <h1>Hi!s</h1>
+            <h1>Meme Generator section</h1>
         )
     }
 }
